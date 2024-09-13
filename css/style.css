@@ -26,6 +26,11 @@ h2.titulo{
     
 }
 
+nav .localizacao a{
+   font-size: 18px;
+    color: deepskyblue;
+}
+
 /* ESTILO DO CABEÇALHO */
 header{
     background-color: #201e1e;
