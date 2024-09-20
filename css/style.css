@@ -424,3 +424,32 @@ h5.email{
      
     
 }
+
+/*ESTILO TABELA(NÃO ESQUECER DE TIRAR)*/
+
+.greenhill img{
+    padding-right: 100%;
+    align-items: center;
+    text-align: center;
+}
+thead{
+    color: #fff;
+}
+tbody{
+    color: #fff;
+    border: 10px;
+    border-color: #fff;
+    width: 500px;
+}
+.sonicIcon,
+.metalSonic,
+.shadow,
+.knuckles{
+    float: left;
+    width: 60px;
+}
+td{
+    
+    padding: 30px;
+    text-align: center;
+}
