@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.title{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    font-size: 30px;
+}
+
+/*HEADER*/
+header{
+    height: 10vh;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    background-color: #00000071;
+    z-index: 1;
+}
+
+.nav-bar{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links{
+    display: flex;
+    float: left;
+    gap: 45px;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* SECTION HOME */
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 22%, rgba(4,0,60,1) 100%);
+    
+}
+
+#home h1{
+    font-size: 100px;
+}
+
+#home h3{
+    font-size: 40px;
+}
+
+
+/* SECTION ABOUT ME */
+
+#aboutMe{
+    box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.9);
+    display: flex;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 22%, rgba(4,0,60,1) 100%);
+    height: 100vh;
+    
+}
+
+/*SECTION SKILLS*/
+#skills-container{
+    box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.9);
+    display: flex;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 22%, rgba(4,0,60,1) 100%);
+    height: 110vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 25px;
+    margin-top: 55px;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    
+}
+
+.skill{
+    display: flex;
+    width: 250px;
+    height: 220px;
+    background-color: #ffffff00;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    float: left;
+}
+
+/*SECTION PROJECTS*/
+#projects-container{
+    box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.9);
+    display: flex;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 22%, rgba(4,0,60,1) 100%);
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
