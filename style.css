@@ -32,8 +32,18 @@ h3{
     font-style: normal;
 }
 
+p{
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
 .title{
     color: #fff;
+    font-size: 25px;
+    height: 20%;
+    margin-top: 10vh;
 }
 
 /*HEADER*/
@@ -108,7 +118,7 @@ header{
     background: linear-gradient( 90deg, #0A0A0A, #0E1F2F , #083035, #0A0A0A);
     height: 110vh;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
 }
 
@@ -118,12 +128,13 @@ header{
     align-items: center;
     justify-content: center;
     flex-wrap:wrap;
+    flex-wrap: wrap;
 
 }
 .skill{
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 186px;
     margin: 20px;
 
 }
@@ -155,74 +166,71 @@ header{
     display: flex;
     color: #000000;
     flex-direction: column;
-    justify-content: flex-end;
+  
     padding-top: 10px;
-}
-.frente p{
-    width: 100%;
-    line-height: 20px;    
-    background-color: #f0f0f0a8;
-    font-size: 15px;
-    padding-left: 10px;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
+    justify-content: center;
+    align-items: center;
 }
 
-.frente h2{
-    width: 100%;
-    background-color:  #f0f0f0a8;
-    font-size: 20px;
-    border-bottom-right-radius: 9px;
-    border-bottom-left-radius:9px ;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-}
+
 
 .skill-back{
-    background-color: rgb(218, 0, 0);
+    background-color: #0A0A0A;
     transform: rotateY(180deg);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 30px;
     color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
     
 }
 
 #html-front{
-    background-image:url(./img/html.png);
-    background-size: cover;
-    background-position: center ;
+    justify-content: center;
+    align-items: center;
 }
-#html-back{
-    background: linear-gradient(#000000, rgb(23, 18, 71));
-    
+#html-front img{
+    height: 170px;
+    width: 170px;
 }
 
-.exemplo1 p{
-    color: #fff;
-    text-align: left;
-    width: 100%;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
+#css-front img{
+    height: 170px;
+    width: 170px;
 }
+
+#node-front img{
+    height: 170px;
+    width: 170px;
+}
+
+
+
 /*SECTION PROJECTS*/
-#projects-container{
+#projects{
     box-shadow: 0 -5px 5px rgba(255, 255, 255, 0.9);
     display: flex;
     background: linear-gradient( 90deg, #0A0A0A, #0E1F2F , #083035, #0A0A0A);
     height: 100vh;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
+    
 }
 
+.project-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
 
+.project{
+    width: 500px;
+    height: 300px;
+    background-color: #000000;
+}
