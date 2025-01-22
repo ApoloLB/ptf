@@ -218,19 +218,8 @@ header{
     background: linear-gradient( 90deg, #0A0A0A, #0E1F2F , #083035, #0A0A0A);
     height: 100vh;
     flex-direction: column;
-    
     align-items: center;
     
 }
 
-.project-container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
 
-.project{
-    width: 500px;
-    height: 300px;
-    background-color: #000000;
-}
