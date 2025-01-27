@@ -5,9 +5,18 @@
     scroll-behavior: smooth;
     
 }
+body{
+    overflow-x: hidden;
+}
 
-main{
-    background: repeating-linear-gradient(#fff,#fff,#fff,#fff, #cccccc, #666) ;
+section{
+    overflow-x: hidden;
+}
+@media only screen and (max-width: 500px){
+    .title{
+        margin-top: 0;
+        height: auto;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -42,7 +51,7 @@ p{
 .title{
     color: #fff;
     font-size: 25px;
-    height: 20%;
+    
     margin-top: 10vh;
 }
 
@@ -76,6 +85,14 @@ header{
 .nav-links li a{
     text-decoration: none;
     color: #fff;
+}
+
+.nav-links li a:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    color: #80c2ff;
+    filter: sepia(#80c2ff);
+    
 }
 
 /* SECTION HOME */
@@ -130,6 +147,9 @@ header{
     justify-content: center;
     flex-wrap:wrap;
     flex-wrap: wrap;
+    padding-left: 40vh;
+    padding-right: 40vh;
+    height: 100%;
 
 }
 .skill{
@@ -157,7 +177,7 @@ header{
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 9px;
+    border-radius: 18px;
     box-shadow: 0px 0px 18px #000000d2;
     backface-visibility: hidden;
     
@@ -193,26 +213,27 @@ header{
     
 }
 
-#html-front{
-    justify-content: center;
-    align-items: center;
-}
-#html-front img{
-    height: 170px;
-    width: 170px;
-}
-
-#css-front img{
-    height: 170px;
-    width: 170px;
-}
-
-#node-front img{
-    height: 170px;
-    width: 170px;
+.skill-front img{
+    height: 90%;
+    width: 90%;
 }
 
 
+
+@media only screen and (max-width: 500px){
+    
+    .skills-container{
+        padding: 0;
+    }
+    .skill{
+        width: 140px;
+        height: 142px;
+    }
+    .skill-back{
+        font-size: 11px;
+    }
+
+}
 
 /*SECTION PROJECTS*/
 #projects{
@@ -235,6 +256,10 @@ header{
     align-items: center;
 }
 
+.d-block{
+    width: 100%;
+    height: 100%;
+}
 .carousel, .slide{
     width: 100%;
 }
@@ -244,15 +269,33 @@ header{
     padding-left: 170px;
     padding-right: 170px;
     background-color: #00000056;
+    display: flex;
 }
 
 .carousel-item img{
-    height: 75vh;
-    object-fit: cover;
-    object-position: bottom;
+    height: 100%;
+    width: 100%;
 }
 
 
+
+
+@media only screen and (max-width: 600px){
+    #projects{
+        height: 60vh;
+    }
+    .carousel-inner{
+        height: 30vh;
+        width: 100%;
+    }
+    .carousel-item{
+        height: 100%;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+}
 /*CONTACT*/
 
 #contact{
@@ -339,3 +382,22 @@ header{
     filter: sepia(#80c2ff);
 }
 
+
+@media only screen and (max-width: 600px){
+    .contact-container{
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .contact-txt{
+        text-align: center;
+        border-right: 0;
+        border-bottom: solid 1px #cccccc;
+    }
+
+    .contact-txt h2{
+        font-size: 24px;
+        tex
+    }
+}
