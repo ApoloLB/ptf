@@ -298,7 +298,12 @@ header{
     flex-direction: column;
     
 }
-
+.project-abstract{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .project-abstract p{
     font-size: 20px;
     color: #fff;
