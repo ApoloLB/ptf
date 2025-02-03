@@ -303,9 +303,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: left;
 }
 .project-abstract p{
-    font-size: 20px;
+    font-size: 17px;
     color: #fff;
     flex-wrap: wrap;
 }
@@ -347,21 +348,33 @@ header{
 
 
 
-@media only screen and (max-width: 600px){
-    #projects{
-        height: 60vh;
-    }
-    .carousel-inner{
-        height: 30vh;
-        width: 100%;
-    }
+@media only screen and (max-width: 700px){
     .carousel-item{
-        height: 100%;
-        width: 100%;
-        padding-left: 40px;
-        padding-right: 40px;
+        height: 400px;
+        width: 50px;
+    }
+
+    .project{
+        width: 250px;
     }
     
+    .project-img{
+        height: 90px;
+        width: 230px;
+    }
+
+    .project-abstract{
+        line-height: 19px;
+        margin-top: 7px;
+    }
+
+    .carousel-control-prev{
+        margin-left: 100px;
+    }
+
+    .carousel-control-next{
+        margin-right: 100px;
+    }
 }
 /*CONTACT*/
 
@@ -409,22 +422,23 @@ header{
     justify-content: center;
     color: #fff;
     gap: 30px;
-    width: 100%;
+    width: 600px;
     height: 100%;
     flex-direction: column;
+    
     
 }
 
 .media{
     height: 40px;
-    width: 100%;
+    width: auto;
     display: flex;
     text-align: left;
     font-size: 13px;
     gap: 10px;
     font-size: 25px;
     padding-left: 40px;
-    align-items: center;
+    
     
 }
 
@@ -450,21 +464,53 @@ header{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1200px){
+    
+    #contact{
+        height: auto;
+    }
+
+  .contact-container{
+    padding: 0;
+  }
+
+   .media{
+    font-size: 18px;
+    padding-left: 20px;
+   }
+    .contact-media{
+        width: 500px;
+    }
+    .media img{
+        height: 30px;
+        width: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 750px){
     .contact-container{
         flex-direction: column;
-        text-align: center;
-        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-
+    
     .contact-txt{
-        text-align: center;
         border-right: 0;
         border-bottom: solid 1px #cccccc;
+
     }
 
-    .contact-txt h2{
-        font-size: 24px;
+    .contact-media{
+        flex-direction: initial;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         
+        
+    }
+
+    .contact-media p {
+        font-size: 13px;
     }
 }
