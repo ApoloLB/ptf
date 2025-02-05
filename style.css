@@ -118,6 +118,36 @@ header{
     font-size: 40px;
 }
 
+@media only screen and (max-width: 550px){
+
+    #home{
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 500px;
+    }
+    #home h1{
+
+        font-size: 40px;
+    }
+
+    #home h3{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    #home{
+        height: 500px;
+    }
+    #home h1{
+
+        font-size: 34px;
+    }
+
+    #home h3{
+        font-size: 24px;
+    }
+}
 
 /* SECTION ABOUT ME */
 
@@ -246,6 +276,7 @@ header{
     
     .skills-container{
         padding: 0;
+        height: auto;
     }
     .skill{
         width: 140px;
@@ -257,7 +288,7 @@ header{
 
 }
 
-@media only screen and (max-width: 5553px){
+@media only screen and (max-width: 553px){
     #skills{
         height: auto;
     }
