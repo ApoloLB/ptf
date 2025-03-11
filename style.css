@@ -593,7 +593,7 @@ header{
         width: 250px;
     }
     
-    .project-img{
+    .project-img, .project-img-pi, .project-img-trip, .project-img-breve{
         height: 90px;
         width: 230px;
     }
