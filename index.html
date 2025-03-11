@@ -8,11 +8,30 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    
+
 </head>
 <body>
     <header>
         <div class="logo"><img src="" alt=""></div>
         <div class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="#home">// Home</a></li>
+                <li><a href="#aboutMe">// About Me</a></li>
+                <li><a href="#skills">// Skills</a></li>
+                <li><a href="#projects">// Projects</a></li>
+                <li><a href="#contact">// Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="openMobile" id="btnOpen">
+            <img src="./img/menu.png" alt="">
+        </div>
+
+        <div class="mobile" id="mobile">
+            <img src="./img/x.png" alt="" id="closeMenu">
+
+            
             <ul class="nav-links">
                 <li><a href="#home">// Home</a></li>
                 <li><a href="#aboutMe">// About Me</a></li>
@@ -36,18 +55,19 @@
 <!--SECTION ABOUT ME-->
 <section id="aboutMe">
    <div class="aboutMe-container">
-    <div class="myPhoto scroll-reveal-img"></div>
 
-    <div class="me scroll-reveal">
-        <p>Olá me chamo Apolo, sou estudante de Desenvolvimento de Software Multiplataforma na Fatec, uma das melhores facultadedes de tecnologia do estado de São Paulo.</p>
-    </div>
+        <div class="myPhoto scroll-reveal-img"></div>
+
+        <div class="me scroll-reveal">
+            <p>Olá me chamo Apolo, sou estudante de Desenvolvimento de Software Multiplataforma na Fatec, uma das melhores facultadedes de tecnologia do estado de São Paulo.</p>
+        </div>
 
    </div>
    
 </section>
 <!--END SECTION ABOUT ME-->
 <!--SECTION SKILLS-->
-<section id="skills">
+<section id="skills ">
     <div class="title"><h1>SKILLS</h1></div>
 
     <div class="skills-container">
@@ -139,8 +159,8 @@
 </section>
 <!--SECTION PROJECTS-->
 <section id="projects">
-    <div class="title"><h1>PROJECTS</h1></div>
-<div class="projects-container">
+    <div class="title scroll-reveal"><h1>PROJECTS</h1></div>
+<div class="projects-container scroll-reveal">
 
 
     <div id="carouselExampleIndicators" class="carousel slide">

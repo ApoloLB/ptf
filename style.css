@@ -13,6 +13,7 @@ body{
 section{
     overflow-x: hidden;
 }
+
 @media only screen and (max-width: 500px){
     .title{
         margin-top: 0;
@@ -107,6 +108,80 @@ header{
     filter: sepia(#80c2ff);
     
 }
+.openMobile{
+    z-index: 99999;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.openMobile img{
+    height: 50px;
+    width: 50px;
+
+
+}
+
+.mobile{
+    background: linear-gradient( #0A0A0A, #000000);
+    height: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999999;
+    width: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 0px 10px 0px 50px;
+
+    
+}
+
+.mobile img{
+    height: 30px;
+    width: 30px;
+    padding-top: 7px;
+    padding-left: 7px;
+}
+
+.mobile ul{
+    text-align: right;
+    flex-direction: column;
+    justify-content: right;
+    justify-self: right;
+    gap: 0;
+}
+
+.mobile ul li{
+    display: flex;
+    padding-right: 40px;
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: right;
+}
+
+.mobile ul li:hover{
+    background-color: #24242460;
+}
+
+.mobile.openMenu{
+    width: 70%;
+}
+
+@media only screen and (max-width: 750px){
+    .nav-bar{
+        display: none;
+    }
+    
+    header{
+        background-color: #00000000;
+    }
+
+    
+}
 
 /* SECTION HOME */
 
@@ -147,7 +222,7 @@ header{
     #home{
         padding-left: 20px;
         padding-right: 20px;
-        height: 500px;
+        height: 370px;
     }
     #home h1{
         animation: fadeOut;
@@ -160,9 +235,7 @@ header{
 }
 
 @media only screen and (max-width: 450px){
-    #home{
-        height: 500px;
-    }
+    
     #home h1{
 
         font-size: 34px;
@@ -198,13 +271,19 @@ header{
 }
 
 .myPhoto{
-    background-image: url();
-    background-color: #80c2ff;
+    background-image: url(./img/eu.png);
+    background-position:center ;
+    background-size: 300px;
+    background-color: #152433;
     border-radius: 100px;
+    border: solid 1px #fff;
     width: 200px;
     height: 200px;
-    
+    display: flex;
+    justify-content: center;
 }
+
+
 
 .me{
     font-size: 27px;
@@ -212,14 +291,43 @@ header{
     color: #fff;
 }
 
+@media only screen and (max-width: 755px){
+    .aboutMe-container{
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .me{
+        width: auto;
+        text-align: center;
+        
+    }
+}
+
+@media only screen and (max-width: 650px){
+    
+
+    .me{
+        font-size: 25px;
+        
+    }
+}
 /*SECTION SKILLS*/
 #skills{
     
+    overflow-x: hidden;
+    overflow-y: hidden;
     display: flex;
     
     flex-direction: column;
     
     align-items: center;
+}
+
+#skills .title{
+    text-align: center;
+    justify-content: center;
 }
 
 .skills-container{
