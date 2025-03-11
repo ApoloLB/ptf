@@ -110,20 +110,27 @@ header{
 }
 .openMobile{
     z-index: 99999;
-    width: 100%;
+    width: 0;
     display: flex;
     justify-content: right;
 }
 
 .openMobile img{
-    height: 50px;
-    width: 50px;
-
+    width: 0;
+    
 
 }
 
+.openMobile.invisible{
+    width: 0;
+}
+
+.openMobile.invisible img{
+    width: 0;
+}
+
 .mobile{
-    background: linear-gradient( #0A0A0A, #000000);
+    background: linear-gradient( #0a0a0ae6, #171717f5);
     height: auto;
     position: fixed;
     top: 0;
@@ -180,6 +187,16 @@ header{
         background-color: #00000000;
     }
 
+    .openMobile{
+        width: 100%;
+    }
+    .openMobile img{
+        height: 50px;
+        width: 50px;
+    }
+
+   
+
     
 }
 
@@ -199,12 +216,7 @@ header{
     
 }
 
-.home{
-    animation: appear linear;
-    animation-timeline: veiw();
-    animation-range: entry 0;
 
-}
 
 #home h1{
     display: flex;
@@ -319,7 +331,7 @@ header{
     overflow-x: hidden;
     overflow-y: hidden;
     display: flex;
-    
+    width: 100%;
     flex-direction: column;
     
     align-items: center;
@@ -459,7 +471,8 @@ header{
 #projects{
     
     display: flex;
-    
+    overflow-x: hidden;
+    overflow-y: hidden;
     height: auto;
     flex-direction: column;
     align-items: center;
@@ -502,11 +515,41 @@ header{
     color: #fff;
     flex-wrap: wrap;
 }
+.project-abstract p a{
+    text-decoration: none;
+    color:#80c2ff ;
+}
 
 .project-img{
     height: 160px;
     width: 330px;
     background-image: url(./img/imob.png);
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+.project-img-pi{
+    height: 160px;
+    width: 330px;
+    background-image: url(./img/pi.png);
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-img-trip{
+    height: 160px;
+    width: 330px;
+    background-image: url(./img/eviagem.png);
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-img-breve{
+    height: 160px;
+    width: 330px;
+    background-image: url(./img/breve.png);
     border-radius: 15px;
     background-size: cover;
     background-position: center;
